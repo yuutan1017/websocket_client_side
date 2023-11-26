@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Websocket Clinet</title>
+  </head>
+  <body>
+    <div id="app">
+      <div>
+        <h1>WebSocket Test</h1>
+        <div style="display: flex;">
+          <div style="display: flex;">
+            <h2>Client Side : </h2>
+            <input id="submit" type="submit" value="Send Request">
+            <input id="disconnect" type="submit" value="Disconnect">
+          </div>
+          <div style="display: flex; margin-left: 5.5rem;">
+            <h2>Server Side : </h2>
+          </div>
+        </div>
+        <div style="display: flex;">
+          <textarea name="client" id="client" cols="50" rows="13"></textarea>
+          <textarea name="server" id="server" cols="50" rows="13" style="margin-left: 3rem;"></textarea>
+        </div>
+
+        <button id="clear">
+          All Clear
+        </button>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+  <style>
+    input{
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-left: 1.5rem;
+    }
+
+    textarea{
+      font-size: large;
+    }
+  </style>
+</html>
